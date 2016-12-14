@@ -51,7 +51,7 @@ $ git clone https://github.com/aerohub/phugo themes/phugo
 
 ## Configuration
 
-Open just-copied `config.toml` and fill it with your data. Pay attention on instructions for the contact form.
+Open just-copied `config.toml` and fill it with your data. Pay attention on instructions for the contact form. Commenting out **all** `params.footer.contact` configuration sections will avoid rendering the contact form.
 
 Now you are ready to create your first photopost/album.
 

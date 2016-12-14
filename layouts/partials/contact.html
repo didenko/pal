@@ -1,0 +1,21 @@
+{{ "<!-- Contact -->" | safeHTML }}
+            <div style="width: 50%;">
+                <section>
+                    <h2>{{ with .headline }}{{ . | markdownify }}{{ end }}</h2>
+                    <form method="post" action="//formspree.io/{{ with .realEmail }}{{.}}{{ end }}" novalidate>
+                        <div class="field half first">
+                            <input type="text" name="name" required data-validation-required-message="{{ with .name.warning }}{{ . | markdownify}}{{ end }}" id="name" placeholder="{{ with .name.text }}{{ .  | markdownify }}{{ end }}" />
+                        </div>
+                        <div class="field half">
+                            <input type="email" name="email" required data-validation-required-message="{{ with .email.warning }}{{ . | markdownify }}{{ end }}" id="email" placeholder="{{ with .email.text }}{{ . | markdownify }}{{ end }}" />
+                        </div>
+                        <div class="field">
+                            <textarea name="message" required data-validation-required-message="{{ with .message.warning }}{{ . | markdownify }}{{ end }}" id="message" rows="4" placeholder="{{ with .message.text }}{{ . | markdownify }}{{ end }}"></textarea>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="{{ .buttonText }}" class="special" /></li>
+                            <li><input type="reset" value="{{ .resetText }}" /></li>
+                        </ul>
+                    </form>
+                </section>
+            </div>
