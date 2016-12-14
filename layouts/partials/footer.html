@@ -14,7 +14,7 @@
                     {{ end }}
                     </ul>
                 </section>
-                <p class="copyright">&copy;&nbsp;{{ with .Site.Params.footer.copyright.name }}{{ . | markdownify }}{{ end }}.</p>
+                {{ with .Site.Params.footer.copyright.name }}<p class="copyright">&copy;&nbsp;{{ . | markdownify }}.</p>{{ end }}
                 <p class="design">
                     Design: <a href="http://html5up.net">HTML5 UP</a>.
                     Ported to Hugo by <a href="//github.com/aerohub">AEROHUB</a>.

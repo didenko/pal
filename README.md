@@ -47,22 +47,58 @@ You can see it in action on [Hugo Themes site](http://themes.gohugo.io/theme/phu
 $ git clone https://github.com/aerohub/phugo themes/phugo
 ```
 
-- Take a look inside the [`exampleSite`](//github.com/aerohub/phugo/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/aerohub/phugo/blob/master/exampleSite/config.toml). Copy the `config.toml` into the root folder of your Hugo site.
+- Take a look inside the [`exampleSite`](//github.com/aerohub/phugo/tree/master/exampleSite) folder of this theme. You will find a file called [`config.toml`](//github.com/aerohub/phugo/blob/master/exampleSite/config.toml). Copy the `config.toml` into the root folder of your Hugo site.
 
 ## Configuration
 
 Open just-copied `config.toml` and fill it with your data. Pay attention on instructions for the contact form. Commenting out **all** `params.footer.contact` configuration sections will avoid rendering the contact form.
 
-Now you are ready to create your first photopost/album.
+Here is the list of all configuration options used by the theme:
+
+- **[**params**]**:
+    description,
+    author,
+    keywords,
+- **[[**params.header.links**]]**:
+    name,
+    url,
+    icon
+- **[**params.footer.paragraph**]**:
+    headline,
+    text
+- **[**params.footer.social**]**:
+    headline
+- **[[**params.footer.social.links**]]**:
+    url,
+    icon,
+    label
+- **[**params.footer.copyright**]**:
+    name
+- **[**params.footer.contact**]**:
+    headline,
+    realEmail,
+    buttonText,
+    resetText
+- **[**params.footer.contact.name**]**:
+    warning,
+    text
+- **[**params.footer.contact.email**]**:
+    warning,
+    text
+- **[**params.footer.contact.message**]**:
+    warning,
+    text
 
 ## Posting
+
+Now you are ready to create your first photopost/album.
 
 Inside your project run:
 
 ```
 $ hugo new NAME-OF-YOUR-ALBUM/index.md
 ```
-It will create an index file of your first album. Open `content/NAME-OF-YOUR-ALBUM/index.md` with your text editor. You'll see something like this:
+It will create an index file of your first album. Open `content/NAME-OF-YOUR-ALBUM/index.md` with your text editor. You will see something like this:
 
 ```
 +++
@@ -90,9 +126,9 @@ Now enter `localhost:1313` in the address bar of your browser.
 
 Just run
 
-	$ hugo
+    $ hugo
 
-You'll find your resume files in `public` folder in the root of Hugo project.
+You will find your resulting files in the `public` folder in the Hugo project root.
 
 ## Roadmap
 

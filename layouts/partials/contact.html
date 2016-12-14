@@ -1,7 +1,7 @@
 {{ "<!-- Contact -->" | safeHTML }}
             <div style="width: 50%;">
                 <section>
-                    <h2>{{ with .headline }}{{ . | markdownify }}{{ end }}</h2>
+                    {{ with .headline }}<h2>{{ . | markdownify }}</h2>{{ end }}
                     <form method="post" action="//formspree.io/{{ with .realEmail }}{{.}}{{ end }}" novalidate>
                         <div class="field half first">
                             <input type="text" name="name" required data-validation-required-message="{{ with .name.warning }}{{ . | markdownify}}{{ end }}" id="name" placeholder="{{ with .name.text }}{{ .  | markdownify }}{{ end }}" />
