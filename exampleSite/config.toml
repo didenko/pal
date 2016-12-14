@@ -26,6 +26,9 @@ googleAnalytics = "UA-XXXXXXX-Y"
     [params.footer.paragraph]
     headline = "Magna feugiat sed adipiscing"
     text = "Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum."
+
+    [params.footer.links]
+    target = "_blank"
     
     [params.footer.social]
     headline = "Follow me"

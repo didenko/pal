@@ -66,6 +66,8 @@ Here is the list of all configuration options used by the theme:
 - **[**params.footer.paragraph**]**:
     headline,
     text
+- **[**params.footer.links**]**:
+    target
 - **[**params.footer.social**]**:
     headline
 - **[[**params.footer.social.links**]]**:
