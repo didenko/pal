@@ -1,5 +1,5 @@
 <header id="header">
-{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ $url := ( .Permalink | relURL ) }}
 {{ $.Scratch.Add "path" .Site.BaseURL }}
     <h1>
     <a href="{{ .Site.BaseURL }}"><strong>{{ .Site.Title }}</strong></a>
