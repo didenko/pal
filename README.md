@@ -98,9 +98,9 @@ Now you are ready to create your first photopost/album.
 Inside your project run:
 
 ```
-$ hugo new NAME-OF-YOUR-ALBUM/index.md
+$ hugo new NAME-OF-YOUR-ALBUM/_index.md
 ```
-It will create an index file of your first album. Open `content/NAME-OF-YOUR-ALBUM/index.md` with your text editor. You will see something like this:
+It will create an index file of your first album. Open `content/NAME-OF-YOUR-ALBUM/_index.md` with your text editor. You will see something like this:
 
 ```
 +++
