@@ -1,10 +1,12 @@
-# Phugo
+# PAL
 
-Phugo [ˈfjuːgəʊ] is a gallery/photoblog theme for Hugo. It is a port of HTML5 UP [Multiverse template](https://html5up.net/multiverse).
+**P**hoto **AL**bum (PAL) is a gallery/photoblog theme for Hugo.
+
+It is a fork of the [Phugo theme](https://github.com/aerohub/phugo) which by itself is a port of [HTML5 UP Multiverse template](https://html5up.net/multiverse).
 
 ## Screenshot
 
-![Orbit screenshot](https://raw.githubusercontent.com/aerohub/phugo/master/images/screenshot.png)
+![screenshot](./images/screenshot.png)
 
 ## Features
 
@@ -19,12 +21,13 @@ Phugo [ˈfjuːgəʊ] is a gallery/photoblog theme for Hugo. It is a port of HTML
 
 - One level albums support
 - Google Analytics
-- Basic breadcrumbs
 - Working contact form
+
+[]: // (- Basic breadcrumbs)
 
 ## Demo
 
-You can see it in action on [Hugo Themes site](http://themes.gohugo.io/theme/phugo/).
+http://didenko.com/
 
 ## Contents
 
@@ -41,13 +44,13 @@ You can see it in action on [Hugo Themes site](http://themes.gohugo.io/theme/phu
 ## Installation
 
 - [Install Hugo](//gohugo.io/overview/installing/) and create a new site.
-- Install Phugo. Inside your new Hugo project run:
+- Install `pal`. To do that, run while in the root directory of your new Hugo project:
 
 ```
-$ git clone https://github.com/aerohub/phugo themes/phugo
+$ git clone https://github.com/didenko/pal themes/pal
 ```
 
-- Take a look inside the [`exampleSite`](//github.com/aerohub/phugo/tree/master/exampleSite) folder of this theme. You will find a file called [`config.toml`](//github.com/aerohub/phugo/blob/master/exampleSite/config.toml). Copy the `config.toml` into the root folder of your Hugo site.
+- Take a look inside the [`exampleSite`](./exampleSite) folder of this theme. You will find a file called [`config.toml`](./exampleSite/config.toml). Copy the `config.toml` into the root folder of your Hugo site.
 
 ## Configuration
 
@@ -93,20 +96,21 @@ Here is the list of all configuration options used by the theme:
 
 ## Posting
 
-Now you are ready to create your first photopost/album.
+Now you are ready to create your first photo album.
 
 Inside your project run:
 
 ```
-$ hugo new NAME-OF-YOUR-ALBUM/_index.md
+$ hugo new PATH-TO-YOUR-ALBUM/_index.md
 ```
-It will create an index file of your first album. Open `content/NAME-OF-YOUR-ALBUM/_index.md` with your text editor. You will see something like this:
+It will create an index file of your first album. Open `content/PATH-TO-YOUR-ALBUM/_index.md` with your text editor. You will see something like this:
 
 ```
 +++
 albumthumb = "path/to/album/cover/image"
 date = "2016-10-21T19:07:17+03:00"
 title = "index"
+type = "pal"
 +++
 
 {{< photo full="path/to/first/FULL-SIZE/image/in/your/gallery.jpg" thumb="path/to/its/THUMBNAIL/image.jpg" alt="" phototitle="SOME TITLE" description="SOME SHORT DESCRIPTION. MARKDOWN **SUPPORTED**. REPEAT THIS SHORTCODE FOR EVERY IMAGE YOU HAVE IN THIS GALLERY">}}

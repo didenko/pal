@@ -1,8 +1,12 @@
 /*
-	Phugo - Photogallery Theme for Hugo
-	by Pavel Kanyshev | github.com/aerohub
-	It's based on Multiverse by HTML5 UP
-	html5up.net | @ajlkn
+	PAL - Photo Album theme for Hugo
+
+	Contributions from:
+		Pavel Kanyshev | github.com/aerohub/phugo
+		Vlad Didenko | github.com/didenko/pal
+
+	Based on Multiverse by HTML5 UP | html5up.net | @ajlkn
+
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 

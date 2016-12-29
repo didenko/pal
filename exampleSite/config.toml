@@ -1,16 +1,16 @@
 # Settings
 baseurl = "http://example.org/"
 languageCode = "en-us"
-title = "Phugo"
-theme = "phugo"
+title = "Photo Album theme"
+theme = "pal"
 googleAnalytics = "UA-XXXXXXX-Y"
 
 [params]
 
     # Meta
-    description = "Phugo - Photo Gallery on Hugo"
-    author = "aerohub"
-    keywords = "phugo, hugo, photogallery, photoblog, hugo theme"
+    description = "PAL - Photo Album theme for Hugo"
+    author = "didenko"
+    keywords = "pal, hugo, photogallery, photoblog, hugo theme"
     
     # Headerbar links
     # Do not put here too many links,

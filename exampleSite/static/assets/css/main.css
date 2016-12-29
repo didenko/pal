@@ -1,12 +1,18 @@
-@import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 /*
-	Phugo - Photogallery Theme for Hugo
-	by Pavel Kanyshev | github.com/aerohub
-	It's based on Multiverse by HTML5 UP
-	html5up.net | @ajlkn
+	PAL - Photo Album theme for Hugo
+
+	Contributions from:
+		Pavel Kanyshev | github.com/aerohub/phugo
+		Vlad Didenko | github.com/didenko/pal
+
+	Based on Multiverse by HTML5 UP | html5up.net | @ajlkn
+
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
@@ -221,7 +227,7 @@ table.alt tfoot { border-top: 0; }
 .panel.active { -moz-transform: translateY(1px); -webkit-transform: translateY(1px); -ms-transform: translateY(1px); transform: translateY(1px); }
 .panel > .inner { margin: 0 auto; max-width: 100%; width: 75em; }
 .panel > .inner.split { display: -moz-flex; display: -webkit-flex; display: -ms-flex; display: flex; }
-.panel > .inner.split > div { margin-left: 4em; width: 50%; }
+.panel > .inner.split > div { margin-left: 4em; max-width: 50em; }
 .panel > .inner.split > :first-child { margin-left: 0; }
 .panel > .closer { -moz-transition: opacity 0.2s ease-in-out; -webkit-transition: opacity 0.2s ease-in-out; -ms-transition: opacity 0.2s ease-in-out; transition: opacity 0.2s ease-in-out; background-image: url("images/close.svg"); background-position: center; background-repeat: no-repeat; background-size: 3em; cursor: pointer; height: 5em; opacity: 0.25; position: absolute; right: 0; top: 0; width: 5em; z-index: 2; }
 .panel > .closer:hover { opacity: 1.0; }
@@ -347,5 +353,7 @@ body.loading #main .thumb { -moz-pointer-events: none; -webkit-pointer-events: n
   #main .thumb:nth-child(3) { -moz-transition-delay: 0.95s; -webkit-transition-delay: 0.95s; -ms-transition-delay: 0.95s; transition-delay: 0.95s; } }
 
 /* Footer */
-#footer .copyright { color: #505051; font-size: 0.9em; }
+#footer .copyright { margin-bottom: 0.2em; }
 #footer .copyright a { color: inherit; }
+#footer .design { color: #707071; font-size: 0.7em; }
+#footer .design a { color: inherit; }

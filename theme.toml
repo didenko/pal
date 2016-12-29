@@ -1,19 +1,19 @@
-name = "Phugo"
+name = "pal"
 license = "CCA 3.0 Unported"
-licenselink = "//github.com/didenko/phugo/LICENSE.md"
-description = "Image gallery/Photoblog Theme for Hugo."
-homepage = "//github.com/didenko/phugo"
-tags = ["image gallery", "photoblog", "shortcode"]
+licenselink = "//github.com/didenko/pal/LICENSE.md"
+description = "Photo Album theme for Hugo."
+homepage = "//github.com/didenko/pal"
+tags = ["image gallery", "photo", "photo album", "photoblog", "shortcode"]
 features = ["albums", "contact form", "GA"]
 min_version = 0.18
 
 [[author]]
   name = "Pavel Kanyshev"
-  homepage = "//github.com/aerohub"
+  homepage = "//github.com/aerohub/phugo"
 
 [[author]]
   name = "Vlad Didenko"
-  homepage = "//github.com/didenko"
+  homepage = "//github.com/didenko/pal"
 
 # If porting an existing theme
 [original]
