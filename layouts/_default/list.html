@@ -1,10 +1,10 @@
 {{ define "main" }}
     <div id="main">
-        {{ range (where .Site.Pages "Kind" "section").ByDate.Reverse }}
+        {{- range (where .Data.Pages "Type" "pal").ByDate.Reverse -}}
             <article class="thumb">
                 <a href="{{ .Permalink }}" class="link"><img src="{{ .Params.albumthumb }}" alt="{{ .Title }}" /></a>
                 <h2>{{ .Title }}</h2>
             </article>
-        {{ end }}
+        {{- end -}}
     </div>
 {{ end }}
