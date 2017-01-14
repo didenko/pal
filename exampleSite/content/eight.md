@@ -1,8 +1,8 @@
 +++
-albumthumb = "http://placehold.it/360x247/232322/ffffff?text=Album"
-date = "2016-10-21T19:16:54+03:00"
-title = "Album Ten Title"
-
+albumthumb = "http://placehold.it/360x247/60493D/ffffff?text=Album"
+date = "2016-10-21T19:16:04+03:00"
+title = "Album Eight Title"
+type = "pal"
 +++
 
 {{< photo full="http://placehold.it/1024x683/D0661C/ffffff?text=Full+Image" thumb="http://placehold.it/360x247/D0661C/ffffff?text=Thumbnail" alt="" phototitle="Magna feugiat lorem" description="Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.">}}

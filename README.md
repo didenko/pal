@@ -22,7 +22,7 @@ It is a fork of the [Phugo theme](https://github.com/aerohub/phugo) which by its
 - One level albums support
 - Google Analytics
 - Working contact form
-
+- Unlisted albums
 []: // (- Basic breadcrumbs)
 
 ## Demo
@@ -96,14 +96,16 @@ Here is the list of all configuration options used by the theme:
 
 ## Posting
 
-Now you are ready to create your first photo album.
+Now you are ready to create your first photo album. Albums consist of full-resolution images, a smaller resolution thumbnails for the images and a decriptor file used by `Hugo` to generate the web page and point to the images and thumbnails.
 
-Inside your project run:
+it is up to you where to store the images and thumbnails, as long as they can be accessible via a URL from a client browser. I keep them in the `static/albums/` folder of a `Hugo` project, so they end up in the `/albums/` path of a generated website.
+
+Album's index files have to be in the `content/` directory hierarchy. To generate an album descriptor run the following inside your project:
 
 ```
-$ hugo new PATH-TO-YOUR-ALBUM/_index.md
+$ hugo new YOUR-ALBUM.md
 ```
-It will create an index file of your first album. Open `content/PATH-TO-YOUR-ALBUM/_index.md` with your text editor. You will see something like this:
+It will create an index file of your first album. Open `content/YOUR-ALBUM.md` with your text editor. You will see something like this:
 
 ```
 +++
@@ -111,6 +113,7 @@ albumthumb = "path/to/album/cover/image"
 date = "2016-10-21T19:07:17+03:00"
 title = "index"
 type = "pal"
+# unlisted = "yes"
 +++
 
 {{< photo full="path/to/first/FULL-SIZE/image/in/your/gallery.jpg" thumb="path/to/its/THUMBNAIL/image.jpg" alt="" phototitle="SOME TITLE" description="SOME SHORT DESCRIPTION. MARKDOWN **SUPPORTED**. REPEAT THIS SHORTCODE FOR EVERY IMAGE YOU HAVE IN THIS GALLERY">}}
@@ -118,33 +121,32 @@ type = "pal"
 ```
 Change the title of your album and set the url of album's cover. Then fill the shortcode fields with the first image data. Repeat the shortcode for every image in the gallery. You may use both local and remote images.
 
-Create needed albums and then 
+If you uncomment the `unlisted` parameter, then the album will be rendered into a web page, but will not be a part of the list of albums on the home page.
+
+Repeat the images/thumbnails/descriptor process for all desired albums. 
 
 ## Test your site
 
 In order to see your site in action, run Hugo's built-in local server. 
 
-    $ hugo server -w
+    $ hugo -v server -w
 
 Now enter `localhost:1313` in the address bar of your browser.
 
 ## Building the site
 
-Just run
+To put the generated website files into the `public` folder in the Hugo project root, run:
 
     $ hugo
 
-You will find your resulting files in the `public` folder in the Hugo project root.
+Alternatively, to put the generated website files into a specific outside directory, run:
 
-## Roadmap
-
-- [ ] Pagination support
-- [ ] Taxonomies
+    $ hugo -d PATH_TO_PUT_WEBSITE_FILES_TO
 
 ## Contributing
 
-Did you found a bug or got an idea? Feel free to use the [issue tracker](//github.com/aerohub/hugo-orbit-theme/issues).
+Did you found a bug or got an idea? Feel free to use the [issue tracker](//github.com/didenko/pal/issues).
 
 ## License
 
-The original template is released under the Creative Commons Attribution 3.0 License. Please keep the original attribution link when using for your own project.
+The original templates are released under the Creative Commons Attribution 3.0 License. Please keep attribution links to the original templates when using for your own project.
