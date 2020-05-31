@@ -1,3 +1,5 @@
+**DEPRECATED** This theme relies on a no-longer-developed javascript library (Multiverse). Among other issues, it seems to break mobile support. I am in a process of replacing it with a simpler setup based on the [LightGallery](https://github.com/sachinchoolur/lightGallery). It will take a while though - not much free time these days.
+
 # PAL
 
 **P**hoto **AL**bum (PAL) is a gallery/photoblog theme for Hugo.
@@ -31,14 +33,20 @@ http://didenko.com/
 
 ## Contents
 
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Posting](#posting)
-- [Test your site](#test-your-site)
-- [Building the site](#building-the-site)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+- [PAL](#pal)
+  - [Screenshot](#screenshot)
+  - [Features](#features)
+    - [Original](#original)
+    - [Added](#added)
+  - [Demo](#demo)
+  - [Contents](#contents)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [Posting](#posting)
+  - [Test your site](#test-your-site)
+  - [Building the site](#building-the-site)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 
 ## Installation
@@ -123,11 +131,11 @@ Change the title of your album and set the url of album's cover. Then fill the s
 
 If you uncomment the `unlisted` parameter, then the album will be rendered into a web page, but will not be a part of the list of albums on the home page.
 
-Repeat the images/thumbnails/descriptor process for all desired albums. 
+Repeat the images/thumbnails/descriptor process for all desired albums.
 
 ## Test your site
 
-In order to see your site in action, run Hugo's built-in local server. 
+In order to see your site in action, run Hugo's built-in local server.
 
     $ hugo -v server -w
 
